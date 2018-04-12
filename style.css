@@ -1,0 +1,30 @@
+body {
+  overflow: hidden;
+  background: #EEEEEE; }
+.container {
+  width: calc(100vw-40px);
+  margin: 20px 20px;
+  border-radius: 5px;
+  background: #FFFFFF; }
+.leaderboard table {
+  width: calc(100% - 20px);
+  margin: 10px 10px;
+  border-collapse: collapse; }
+  .leaderboard table thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+  .leaderboard table tbody {
+    display: block;
+    height: 87vh;
+    overflow: auto; }
+  .leaderboard table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+  .leaderboard table td, .leaderboard table th {
+    text-align: left;
+    padding: 13px 10px;
+    border-bottom: solid 1px grey; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
