@@ -1,0 +1,31 @@
+.leaderboard {
+  table {
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+    border-collapse: collapse;
+
+    thead {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    tbody {
+      display: block;
+      height: 87vh;
+      overflow: auto;
+    }
+
+    tr {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    td, th {
+      text-align: left;
+      padding: 13px 10px;
+      border-bottom: solid 1px grey;
+    }
+  }
+}
