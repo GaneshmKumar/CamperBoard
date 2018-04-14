@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Leaderboard.scss';
+import Avatar from '../Avatar/Avatar';
 
 const recentURL = 'https://fcctop100.herokuapp.com/api/fccusers/top/recent';
 
@@ -28,10 +29,12 @@ class Leaderboard extends Component {
   _generateTableRowMarkup (campers) {
     return campers.map((camper, index) => (
       <tr>
-        <td>{index + 1}</td>
-        <td>{camper.username}</td>
-        <td>{camper.recent}</td>
-        <td>{camper.alltime}</td>
+        <td className="rank">{index + 1}</td>
+        <td className="camper">
+          <Avatar username={camper.username} avatarURL={camper.img} />
+        </td>
+        <td className="recent-points">{camper.recent}</td>
+        <td className="alltime-points">{camper.alltime}</td>
       </tr>
     ));
   }
@@ -40,10 +43,10 @@ class Leaderboard extends Component {
     return (
       <table>
         <thead>
-          <th>#</th>
-          <th>Name</th>
-          <th>Points in past 30 days</th>
-          <th>All time points</th>
+          <th className="rank">Rank</th>
+          <th className="camper">Camper</th>
+          <th className="recent-points">Points in past 30 days</th>
+          <th className="alltime-points">All time points</th>
         </thead>
         <tbody>
           {this._generateTableRowMarkup(this.state.recentCampers)}

@@ -1,0 +1,39 @@
+.avatar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-decoration: none;
+  color: #212121;
+
+  .avatar-img {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 0px auto;
+    left: 60px;
+    border-radius: 100%;
+  }
+
+  .username {
+    position: relative;
+    padding-top: 7px;
+    margin-left: 10px;
+    text-align: left;
+  }
+}
+
+@media only screen and
+(max-width: 760px),
+(max-device-width: 1024px) and
+(min-device-width: 768px) {
+  .avatar {
+    grid-template-columns: 100%;
+
+    .avatar-img {
+      left: 0px;
+    }
+
+    .username {
+      text-align: center;
+    }
+  }
+}

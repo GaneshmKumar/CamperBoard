@@ -23,9 +23,35 @@
     }
 
     td, th {
-      text-align: left;
+      text-align: center;
       padding: 13px 10px;
       border-bottom: solid 1px grey;
     }
+
+    .rank {
+      width: 10%;
+    }
+
+    .camper {
+      width: 40%;
+    }
+
+    .recent-points, .alltime-points {
+      text-align: center;
+      width: 25%;
+    }
+  }
+}
+
+@media only screen and
+(max-width: 760px),
+(max-device-width: 1024px) and
+(min-device-width: 768px) {
+  .camper {
+    text-align: center;
+  }
+
+  .avatar-img {
+    margin: 0px auto;
   }
 }
