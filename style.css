@@ -1,6 +1,11 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Muli);body {
   overflow: hidden;
-  background: #EEEEEE; }
+  background: #EEEEEE;
+  font-family: 'Muli', sans-serif; }
+
+@media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px) {
+  body {
+    font-size: 13px; } }
 .container {
   width: calc(100vw-40px);
   margin: 20px 20px;
@@ -23,8 +28,46 @@ body {
     width: 100%;
     table-layout: fixed; }
   .leaderboard table td, .leaderboard table th {
-    text-align: left;
+    text-align: center;
     padding: 13px 10px;
     border-bottom: solid 1px grey; }
+  .leaderboard table .rank {
+    width: 10%; }
+  .leaderboard table .camper {
+    width: 40%; }
+  .leaderboard table .recent-points, .leaderboard table .alltime-points {
+    text-align: center;
+    width: 25%; }
+
+@media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px) {
+  .camper {
+    text-align: center; }
+  .avatar-img {
+    margin: 0px auto; } }
+.avatar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-decoration: none;
+  color: #212121; }
+  .avatar .avatar-img {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 0px auto;
+    left: 60px;
+    border-radius: 100%; }
+  .avatar .username {
+    position: relative;
+    padding-top: 7px;
+    margin-left: 10px;
+    text-align: left; }
+
+@media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px) {
+  .avatar {
+    grid-template-columns: 100%; }
+    .avatar .avatar-img {
+      left: 0px; }
+    .avatar .username {
+      text-align: center; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
