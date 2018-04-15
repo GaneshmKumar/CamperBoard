@@ -4,3 +4,12 @@
   border-radius: 5px;
   background: #FFFFFF;
 }
+
+@media only screen and
+(max-width: 760px),
+(max-device-width: 1024px) and
+(min-device-width: 768px) {
+  .container {
+    margin: 20px 10px;
+  }
+}

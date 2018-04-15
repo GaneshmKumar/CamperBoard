@@ -15,6 +15,7 @@
 
   .username {
     position: relative;
+    left: -30px;
     padding-top: 7px;
     margin-left: 10px;
     text-align: left;
@@ -33,7 +34,27 @@
     }
 
     .username {
+      left: 0px;
       text-align: center;
     }
+  }
+}
+
+@media only screen and
+(max-width: 760px),
+(max-device-width: 768px) {
+  .username {
+    left: 0px;
+  }
+}
+
+@media only screen and
+(max-width: 760px),
+(max-device-width: 1024px) and
+(min-device-width: 768px) {
+  .long-username {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }

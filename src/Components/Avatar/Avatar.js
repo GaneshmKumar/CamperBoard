@@ -6,7 +6,7 @@ class Avatar extends Component {
     return (
       <a className="avatar" target="_blank" rel="noopener noreferrer" href={`https://www.freecodecamp.org/${this.props.username}`}>
         <img className="avatar-img" src={this.props.avatarURL} alt={this.props.username} />
-        <span className="username">{this.props.username}</span>
+        <span className={`username ${this.props.username.length >= 12 ? 'long-username' : ''}`}>{this.props.username}</span>
       </a>
     );
   }
