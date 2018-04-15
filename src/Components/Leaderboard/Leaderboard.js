@@ -46,7 +46,7 @@ class Leaderboard extends Component {
   }
 
   _generateTableRowMarkup (campers) {
-    const searchText = this.props.searchText;
+    const { searchText } = this.props;
 
     return campers.map((camper, index) => (
       <tr className={camper.username.includes(searchText) ? 'show' : 'hide'}>
