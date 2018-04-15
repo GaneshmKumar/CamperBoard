@@ -1,0 +1,23 @@
+.search-bar {
+  float: right;
+  margin: 27px 30px 0px 0px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #E0E0E0;
+  height: 30px;
+  padding: 7px 7px;
+  width: 240px;
+}
+
+@media only screen and
+(max-width: 760px),
+(max-device-width: 1024px) and
+(min-device-width: 768px) {
+  .search-bar {
+    margin: 0px auto;
+    display: block;
+    float: none;
+    height: 35px;
+    width: 93%;
+  }
+}

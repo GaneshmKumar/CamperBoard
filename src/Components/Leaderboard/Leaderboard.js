@@ -46,8 +46,10 @@ class Leaderboard extends Component {
   }
 
   _generateTableRowMarkup (campers) {
+    const searchText = this.props.searchText;
+
     return campers.map((camper, index) => (
-      <tr>
+      <tr className={camper.username.includes(searchText) ? 'show' : 'hide'}>
         <td className="rank">{index + 1}</td>
         <td className="camper">
           <Avatar username={camper.username} avatarURL={camper.img} />

@@ -48,6 +48,14 @@
     .active-column {
       border-bottom: solid 4px #414141;
     }
+
+    .show {
+      display: table;
+    }
+
+    .hide {
+      display: none;
+    }
   }
 }
 
