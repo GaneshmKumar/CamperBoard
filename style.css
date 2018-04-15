@@ -11,6 +11,10 @@
   margin: 20px 20px;
   border-radius: 5px;
   background: #FFFFFF; }
+
+@media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px) {
+  .container {
+    margin: 20px 10px; } }
 .leaderboard table {
   width: calc(100% - 20px);
   margin: 10px 10px;
@@ -30,7 +34,7 @@
   .leaderboard table td, .leaderboard table th {
     text-align: center;
     padding: 13px 10px;
-    border-bottom: solid 1px grey; }
+    border-bottom: solid 1px #E0E0E0; }
   .leaderboard table .rank {
     width: 10%; }
   .leaderboard table .camper {
@@ -38,6 +42,10 @@
   .leaderboard table .recent-points, .leaderboard table .alltime-points {
     text-align: center;
     width: 25%; }
+  .leaderboard table .recent-points:hover, .leaderboard table .alltime-points:hover {
+    cursor: pointer; }
+  .leaderboard table .active-column {
+    border-bottom: solid 4px #414141; }
 
 @media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px) {
   .camper {
@@ -58,6 +66,7 @@
     border-radius: 100%; }
   .avatar .username {
     position: relative;
+    left: -30px;
     padding-top: 7px;
     margin-left: 10px;
     text-align: left; }
@@ -68,6 +77,17 @@
     .avatar .avatar-img {
       left: 0px; }
     .avatar .username {
+      left: 0px;
       text-align: center; } }
+
+@media only screen and (max-width: 760px), (max-device-width: 768px) {
+  .username {
+    left: 0px; } }
+
+@media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px) {
+  .long-username {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
