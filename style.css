@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Muli);body {
+@import url(https://fonts.googleapis.com/css?family=Muli|Lobster);body {
   overflow: hidden;
   background: #EEEEEE;
   font-family: 'Muli', sans-serif; }
@@ -11,10 +11,20 @@
   margin: 20px 20px;
   border-radius: 5px;
   background: #FFFFFF; }
+  .container .app-title {
+    display: inline-block;
+    margin: 20px 0px 0px 30px;
+    letter-spacing: 1px;
+    color: #212121;
+    font-family: 'Lobster', cursive; }
 
 @media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px) {
   .container {
-    margin: 20px 10px; } }
+    margin: 20px 10px; }
+    .container .app-title {
+      display: block;
+      padding: 10px;
+      margin-left: 10px; } }
 .leaderboard table {
   width: calc(100% - 20px);
   margin: 10px 10px;
@@ -46,6 +56,10 @@
     cursor: pointer; }
   .leaderboard table .active-column {
     border-bottom: solid 4px #414141; }
+  .leaderboard table .show {
+    display: table; }
+  .leaderboard table .hide {
+    display: none; }
 
 @media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px) {
   .camper {
@@ -89,5 +103,22 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; } }
+.search-bar {
+  float: right;
+  margin: 27px 30px 0px 0px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #E0E0E0;
+  height: 30px;
+  padding: 7px 7px;
+  width: 240px; }
+
+@media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px) {
+  .search-bar {
+    margin: 0px auto;
+    display: block;
+    float: none;
+    height: 35px;
+    width: 93%; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
