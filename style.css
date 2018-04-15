@@ -10,7 +10,8 @@
   width: calc(100vw-40px);
   margin: 20px 20px;
   border-radius: 5px;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   .container .app-title {
     display: inline-block;
     margin: 20px 0px 0px 30px;
@@ -35,7 +36,7 @@
     table-layout: fixed; }
   .leaderboard table tbody {
     display: block;
-    height: 87vh;
+    height: 75vh;
     overflow: auto; }
   .leaderboard table tr {
     display: table;
